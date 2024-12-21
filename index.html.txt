@@ -1,33 +1,284 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Jesús Palacios - Calculadora de Inversión</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Calculadora de Inversión - Utiliza esta calculadora para planificar tus inversiones y compararlas con un ahorro tradicional - Jesús Palacios">
-    <meta name="description" content="Cómo iniciar mi negocio - Te da un panorama de las habilidades y herramientas para emprender - Es un mapa de ruta que te da una guía para emprender y convertirte en empresario - Te da las bases para poder hacer un negocio sostenible y escalable">
-    <meta name="keywords" content="Inversiones, ahorro, calculadora">
-    <meta name="author" content="ACL Systems SA de CV">
-    <link rel="icon" type="image/jpg" href="/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/8eb992dea4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.min.js"></script>
-    <script src="/js/mainCalc.js" defer></script>
-</head>
-<body>
-    <!-- Contenido de la página -->
-    <section class="text-dark pt-2 pb-5 mb-0" id="wrap">
+	<head>
+		<meta charset="UTF-8">
+		<title>Tiburón Inversionista - Calculadora de Inversión</title>
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+			<meta name="description" content="Calculadora de Inversión - Utiliza esta calculadora para planificar tus inversiones y compararlas con un ahorro tradicional - Jesús Palacios">
+			<meta name="description" content="Cómo iniciar mi negocio - Te da un panorama de las habilidades y herramientas para emprender - Es un mapa de ruta que te da una guía para emprender y convertirte en empresario - Te da las bases para poder hacer un negocio sostenible y escalable">
+			<meta name="keywords" content="Inversiones, ahorro, calculadora">
+			<meta name="author" content="TIBURÓN INVERSIONISTA">
+			<link rel="icon" type="image/jpg" href="/favicon.ico">
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+			<script src="https://kit.fontawesome.com/8eb992dea4.js" crossorigin="anonymous"></script>
+			<link rel="stylesheet" href="/css/style.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.min.js"></script>
+			<!-- <style type="text/css" media="print">
+				body {
+					display:none;
+					visibility:hidden;
+				}
+			</style> -->
+			<script src="/js/mainCalc.js" defer></script>
+		</head>
+		<body>
+			<!-- <div class="container" id="navbar">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container">
+						<a class="navbar-brand" href="#">
+							<img src="http://via.placeholder.com/102x30/007bff/ffffff?text=logo" height="30" alt="image">
+						</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav3">
+							<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+								<li class="nav-item active">
+									<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Features</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Pricing</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Team</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">About</a>
+								</li>
+							</ul>
+							<a class="btn btn-outline-dark ml-md-3" href="#">Conoce más</a>
+						</div>
+					</div>
+				</nav>
+			</div> -->
+			<section class="text-dark pt-2 pb-5 mb-0" id="wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col text-center">
+							<nav aria-label="breadcrumb">
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item"><a href="/">Inicio</a></li>
+									<li class="breadcrumb-item active" aria-current="page">Calculadora de Inversión</li>
+								</ol>
+							</nav>
+							<hr>
+							<h2 class="font-weight-bold">Calculadora de Interés Compuesto</h2>
+							<h3 class="lead">Esta calculadora te permite calcular el monto que podrías generar al realizar una inversión.</h3>
+							<hr>
+						</div>
+					</div>
+					<div class="row align-items-start justify-content-md-start">
+						<div class="col-sm-12 col-md-4">
+							<div class="card">
+								<div class="card-body fontSmaller">
+									<p>¿Qué <b>cantidad</b> tienes para comenzar?</p>
+									<div class="input-group input-group-sm mb-3" id="cont_initial">
+										<span class="input-group-text">Depósito inicial</span>
+										<input
+											type="text"
+											class="form-control"
+											placeholder="Ingresa número sin centavos"
+											id="initial"
+											tabindex="1"
+											>
+										<button class="btn btn-outline-primary" type="button">OK</button>
+									</div>
+									<p>¿<b>Cuánto</b> puedes aportar al año?<br />Si lo haces mensual, multiplícalo por 12</p>
+									<div class="input-group input-group-sm mb-3" id="cont_savings">
+										<span class="input-group-text">Aportación anual</span>
+										<input
+											type="text"
+											class="form-control"
+											placeholder="Ingresa número sin centavos"
+											id="savings"
+											tabindex="2"
+											>
+										<button class="btn btn-outline-primary" type="button">OK</button>
+									</div>
+									<p>Debido a la <i>inflación</i>, ¿en qué <b>porcentaje</b> <b>incrementarías</b> tu aportación anual cada año?</p>
+									<div class="input-group input-group-sm mb-3" id="cont_increase">
+										<span class="input-group-text">Incremento anual</span>
+										<input
+											type="text"
+											class="form-control"
+											placeholder="10%"
+											id="increase"
+											tabindex="3"
+											>
+										<button class="btn btn-outline-primary" type="button">OK</button>
+									</div>
+									<p>¿A <b>cuánto</b>s años proyectarías tu inversión?</p>
+									<div class="input-group input-group-sm mb-3" id="cont_years">
+										<span class="input-group-text">Años de inversión</span>
+										<input
+											type="text"
+											class="form-control"
+											placeholder="15"
+											id="years"
+											tabindex="4"
+											>
+										<button class="btn btn-outline-primary" type="button">OK</button>
+									</div>
+									<p><b>Ahorradores (Cetes)</b> obtienen de un 5% a 7% anual. <br /><b>Inversionistas en bolsa (renta variable)</b> obtienen 10-20% anual.</p>
+									<div class="input-group input-group-sm mb-3" id="cont_interest">
+										<span class="input-group-text">Rendimiento % anual esperado</span>
+										<input
+											type="text"
+											class="form-control"
+											placeholder="10%"
+											id="interest"
+											tabindex="5"
+											>
+										<button class="btn btn-outline-primary" type="button">OK</button>
+									</div>
+
+									<!-- <button class="btn btn-sm btn-primary hidden" id="calculate">
+										Calcular
+									</button> -->
+									<button class="btn btn-sm btn-primary text-center hidden" type="button" id="resetResults">
+										Borrar todo
+									</button>
+									<a
+										class="btn btn-sm btn-success text-center hidden float-right"
+										id="whatsAppButton"
+										href="https://wa.link/2rutyq"
+										target="_blank"
+										rel="noopener"
+										>
+										Quiero más información
+									</a>
+									<div class="container">
+										<div class="row">
+											<div class="col-sm col-md-4">
+													<img src="/img/wa.png" alt="contactame por whatsApp" class="img-fluid">
+											</div>
+											<div class="col-sm">
+													<p class="fontSmaller">Para más información escanea este código con tu celular</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-8 align-self-start px-2 mt-4 mt-md-0 hidden results">
+							<div class="card">
+								<div class="card-header">
+									<h3>Resultados</h3>
+									<div class="row">
+										<div class="col">
+											<p><b>Aportación inicial:</b> <span id="initial_balance"></span></p>
+										</div>
+										<div class="col">
+											<p class="text-primary"><b>Saldo Ahorro:</b> <span id="balance"></span></p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<p class="text-danger"><b>Rendimiento total:</b> <span id="earnings"></span></p>
+										</div>
+										<div class="col">
+											<p class="text-success"><b>Saldo Inversión:</b> <span id="final_balance"></span></p>
+										</div>
+									</div>
+								</div>
+								<div class="card-body">
+									<table class="table table-hover table-sm fontSmaller">
+										<caption>Tabla de resultados</caption>
+										<thead>
+											<tr>
+												<th>Año</th>
+												<!-- <th>Saldo Inicial</th> -->
+												<th>Aportación anual</th>
+												<th>Rendimiento</th>
+												<th class="text-primary">Saldo Ahorro</th>
+												<th class="text-success">Saldo Inversión</th>
+											</tr>
+										</thead>
+										<tbody id="root"></tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container results hidden" id="chartContainer">
+						<canvas id="chartResults"></canvas>
+					</div>
+				</div>
+			</section>
+
+			<section class="pb-3 pt-3 bg-dark mt-0 bottom-sticky" id="footer">
         <div class="container">
-            <!-- Aquí va todo el contenido de tu calculadora -->
+          <div class="row f-flex justify-content-between" style="justify-content: space-between;">
+            <div class="col-md-5 text-xs-center  text-center text-secondary my-1">
+              <p class="mt-2 text-white">
+								<a href="https://aclsystems.mx" class="text-white">© ACL Systems S.A. de C.V.</a> |
+                <!-- <a class="text-white" href="#">Disclaimer</a> | -->
+                <a
+									class="text-white"
+									href="https://wa.link/2rutyq"
+									target="_blank"
+									rel="noopener"
+									>Contacto</a>
+              </p>
+            </div>
+            <!-- <div class="col-md-1 text-xs-center  text-lg-left text-secondary my-1">
+              <a href="#" class="text-white">
+                <svg class="d-block mt-2" width="36" height="36" viewBox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                  <title>Bootstrap</title>
+                  <path fill="currentColor" d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"></path>
+                  <path fill="currentColor" d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"></path>
+                </svg>
+              </a>
+            </div> -->
+            <div class="col-md-4 text-xs-center   text-lg-right text-secondary my-1">
+              <div class="btn-container  mt-1 text-md-right text-sm-center">
+                <div class="mb-1 mr-3 align-self-right pt-0 d-inline-block">
+									<p class="mt-2 text-white">
+										Esta calculadora es exclusiva para fines didácticos - Jesús Palacios
+									</p>
+									<p class="mt-2 text-white"><a href="/retiro" class="text-white">Accede también a la calculadora de retiro</a></p>
+
+                  <!-- <a href="#" role="button" class="text-white p-2 m-2 btn btn-round btn-rised btn-icon btn-primary">
+                    <i class="fab fa-twitter fa-lg color-light" aria-hidden="true"></i>
+                  </a>
+                  <a href="#" role="button" class="text-white p-2 m-2 btn btn-round btn-rised btn-icon btn-primary">
+                    <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+                  </a>
+                  <a href="#" role="button" class="text-white p-2 m-2 btn btn-round btn-rised btn-icon btn-primary">
+                    <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+                  </a>
+                  <a href="#" role="button" class="text-white p-2 m-2 btn btn-rised btn-round btn-icon btn-primary">
+                    <i class="fab fa-google-plus fa-lg" aria-hidden="true"></i>
+                  </a> -->
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <section class="pb-3 pt-3 bg-dark mt-0 bottom-sticky" id="footer">
-        <div class="container">
-            <p class="mt-2 text-white text-center">© ACL Systems S.A. de C.V. | <a href="https://wa.link/2rutyq" target="_blank" class="text-white">Contacto</a></p>
-        </div>
-    </section>
-</body>
+      </section>
+			<!-- Modal -->
+			<div class="modal fade" id="notNumberMessage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Mensaje</h5>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        <p>Ingresa números</p>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</body>
 </html>
